@@ -1,12 +1,83 @@
-# React + Vite
+📊 StockFlow – Inventory Manager
+A full-stack web app to manage your stock efficiently. Built with React (Vite), Node.js, Express, and MongoDB, StockFlow helps you add, edit, and track products with ease.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
 
-Currently, two official plugins are available:
+  🔑 User authentication (login & signup)
+  ➕ Add, ✏️ update, ❌ delete products
+  🔍 Search & filter by name or category
+  📈 Dashboard with live statistics
+  🆕 Recently added products section
+  ☁ Hosted on Render (backend + frontend)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠 Tech Stack
+Frontend: React (Vite), React Router, Custom CSS
 
-## Expanding the ESLint configuration
+Backend: Node.js, Express.js, JWT Auth
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Database: MongoDB (Mongoose)
+
+Deployment: Render
+
+⚡ Setup
+
+Clone the repo
+
+git clone https://github.com/hariharanvp2/stockflow-inventory-frontend
+cd stockflow-inventory
+
+
+Backend
+
+cd backend
+npm install
+touch .env   # add MONGO_URI, JWT_SECRET
+npm start
+
+
+Frontend
+
+cd ../frontend
+npm install
+npm run dev    # dev mode
+npm run build  # production build
+
+🔗 API Overview
+
+Auth
+
+POST /api/auth/signup → register
+
+POST /api/auth/login → login
+
+Products
+
+GET /items → fetch all
+
+GET /items/:id → fetch one
+
+POST /items → add new
+
+PUT /items/:id → update
+
+DELETE /items/:id → delete
+
+🚀 How to Use
+
+Sign up or log in
+
+View product stats on the dashboard
+
+Add new stock with “Add Product”
+
+Use search bar to filter quickly
+
+Manage all stock in “Inventory”
+
+🙌 Credits
+
+Render → hosting
+
+MongoDB Atlas → database
+
+React + Express → app backbone
