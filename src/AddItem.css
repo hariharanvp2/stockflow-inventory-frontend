@@ -1,0 +1,146 @@
+.add-item-wrapper {
+  margin: 80px auto 20px auto;  /* top margin for navbar, center horizontally */
+  padding: 20px;
+  max-width: 1000px;            /* keeps form nicely centered */
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+/* Container split */
+.add-item-container {
+  display: flex;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+/* Left gradient panel */
+.add-item-info {
+  flex: 1;
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+  color: white;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.add-item-info h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.add-item-info p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Right form */
+.add-item-form-section {
+  flex: 1;
+  padding: 40px 30px;
+}
+
+.add-item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.add-item-form input,
+.add-item-form textarea {
+  padding: 12px 14px;
+  font-size: 15px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+  resize: none;
+}
+
+.add-item-form input:focus,
+.add-item-form textarea:focus {
+  border-color: #11998e;
+}
+
+.submit-btn {
+  padding: 14px;
+  background: #11998e;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #0f837a;
+}
+
+.form-message {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #0f837a;
+}
+
+/* Sample section */
+.sample-section {
+  margin-top: 40px;
+}
+
+.sample-section h2 {
+  color: #11998e;
+  margin-bottom: 20px;
+}
+
+.sample-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  list-style: none;
+  padding: 0;
+}
+
+.sample-card {
+  background: #f9f9f9;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sample-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.sample-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.sample-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.sample-category {
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  background: #11998e;
+  color: white;
+  border-radius: 20px;
+}
+
+.sample-desc {
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+}

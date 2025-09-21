@@ -1,0 +1,102 @@
+.sidebar {
+width: 220px;
+height: 100vh;
+background: linear-gradient(135deg, #11998e, #38ef7d);
+
+color: white;
+position: fixed;
+top: 65px; /* below navbar /
+left: 0;  / moved to left /
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px 10px;
+transition: width 0.3s ease;
+box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2); / changed shadow direction */
+z-index: 900;
+}
+
+.sidebar.collapsed {
+width: 70px;
+}
+
+.toggle-btn {
+background: transparent;
+border: none;
+color: white;
+font-size: 1.5rem;
+cursor: pointer;
+margin-bottom: 20px;
+}
+
+.sidebar-profile {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.avatar {
+width: 50px;
+height: 50px;
+background: #f1faee;
+color: #1d3557;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+font-size: 1.2rem;
+margin: 0 auto 10px;
+}
+
+.sidebar-profile h3 {
+font-size: 1rem;
+margin: 0;
+color: #f1faee;
+}
+
+.sidebar-nav {
+flex-grow: 1;
+width: 100%;
+}
+
+.sidebar-nav a {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 12px;
+margin: 8px 0;
+border-radius: 8px;
+text-decoration: none;
+color: #f1faee;
+font-size: 1rem;
+transition: background 0.3s ease, padding 0.2s ease;
+}
+
+.sidebar-nav a:hover {
+background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-footer {
+margin-top: auto;
+width: 100%;
+}
+
+.sidebar-logout,
+.sidebar-link {
+display: block;
+width: 90%;
+padding: 12px;
+border-radius: 8px;
+background: #e63946;
+color: white;
+text-align: center;
+border: none;
+text-decoration: none;
+font-weight: bold;
+transition: background 0.3s ease;
+}
+
+.sidebar-logout:hover,
+.sidebar-link:hover {
+background: #d90429;
+}

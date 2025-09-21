@@ -1,0 +1,118 @@
+.register-layout {
+  display: flex;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+/* Left branding panel */
+.register-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); /* teal → green */
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.register-left h1 {
+  font-size: 2.3rem;
+  margin-bottom: 15px;
+}
+
+.register-left p {
+  font-size: 1.1rem;
+  max-width: 300px;
+}
+
+/* Right form panel */
+.register-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+
+.register-right h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Floating label inputs */
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  outline: none;
+  font-size: 16px;
+  padding: 8px 0;
+  background: transparent;
+}
+
+.input-group label {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  font-size: 14px;
+  color: #777;
+  pointer-events: none;
+  transition: 0.3s ease all;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -12px;
+  font-size: 12px;
+  color: #11998e; /* teal focus */
+}
+
+/* Fresh pill-shaped button */
+.register-right button {
+  width: 100%;
+  padding: 12px;
+  background: #11998e; /* teal */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-right button:hover {
+  background: #0f837a;
+}
+
+.register-right p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.register-right a {
+  color: #11998e;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.register-right a:hover {
+  text-decoration: underline;
+}
+
+/* Success/Failure message */
+.form-message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: green;
+}
