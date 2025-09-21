@@ -3,7 +3,7 @@ A full-stack web app to manage your stock efficiently. Built with React (Vite), 
 
 ✨ Features
 
-  🔑 User authentication (login & signup)
+  🔑 User authentication (login & signup) 
   ➕ Add, ✏️ update, ❌ delete products
   🔍 Search & filter by name or category
   📈 Dashboard with live statistics
@@ -11,18 +11,14 @@ A full-stack web app to manage your stock efficiently. Built with React (Vite), 
   ☁ Hosted on Render (backend + frontend)
 
 🛠 Tech Stack
-Frontend: React (Vite), React Router, Custom CSS
+  Frontend: React (Vite), React Router, Custom CSS
+  Backend: Node.js, Express.js, JWT Auth
+  Database: MongoDB (Mongoose)
+  Deployment: Render
 
-Backend: Node.js, Express.js, JWT Auth
-
-Database: MongoDB (Mongoose)
-
-Deployment: Render
-
-⚡ Setup
+⚡Setup
 
 Clone the repo
-
 git clone https://github.com/hariharanvp2/stockflow-inventory-frontend
 cd stockflow-inventory
 
@@ -81,3 +77,4 @@ Render → hosting
 MongoDB Atlas → database
 
 React + Express → app backbone
+
